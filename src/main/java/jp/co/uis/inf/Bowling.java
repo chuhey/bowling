@@ -5,14 +5,15 @@ package jp.co.uis.inf;
  *
  */
 public class Bowling {
-    public static int score(int[][] pinsOfEachFrames) {
-        // wrong calculation
-        int score = 0;
-        for (int[] frame : pinsOfEachFrames) {
-            for (int pins : frame) {
-                score += pins;
-            }
-        }
-        return score;
+    public Bowling(int[][] pinsOfEachFrames) {
+        // TODO
+    }
+    /**
+     * ボーリングスコアを計算する
+     * @return スコア（0〜300）
+     */
+    public int score() {
+        // TODO
+        return 0;
     }
 }

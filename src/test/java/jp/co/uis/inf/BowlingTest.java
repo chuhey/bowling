@@ -1,7 +1,5 @@
 package jp.co.uis.inf;
 
-import static org.junit.Assert.assertTrue;
-
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -25,7 +23,8 @@ public class BowlingTest {
             {3, 3},  // No.9 frame
             {1, 9, 5}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(72));
     }
 
@@ -43,7 +42,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(19));
     }
 
@@ -61,7 +61,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(10));
     }
 
@@ -79,7 +80,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(30));
     }
 
@@ -97,7 +99,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(60));
     }
 
@@ -115,7 +118,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(90));
     }
 
@@ -133,7 +137,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(120));
     }
 
@@ -151,7 +156,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(150));
     }
 
@@ -169,7 +175,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(180));
     }
 
@@ -187,7 +194,8 @@ public class BowlingTest {
             {0, 0},  // No.9 frame
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(210));
     }
 
@@ -205,7 +213,8 @@ public class BowlingTest {
             {10, 0}, // No.9 frame ( strike )
             {0, 0, 0}// No.10 frame
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(240));
     }
 
@@ -223,7 +232,8 @@ public class BowlingTest {
             {10, 0}, // No.9 frame ( strike )
             {10, 0, 0}// No.10 frame ( strike only 1st throw )
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(270));
     }
 
@@ -242,7 +252,8 @@ public class BowlingTest {
             {10, 0}, // No.9 frame ( strike )
             {10, 10, 0}// No.10 frame ( strike 1st & 2nd throws )
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(290));
     }
 
@@ -260,7 +271,8 @@ public class BowlingTest {
             {10, 0}, // No.9 frame ( strike )
             {10, 10, 10}// No.10 frame ( strike all throws )
         };
-        int score = Bowling.score(pins);
+        Bowling game = new Bowling(pins);
+        int score = game.score();
         assertThat(score, is(300));
     }
 }
